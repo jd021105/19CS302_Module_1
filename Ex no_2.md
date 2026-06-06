@@ -1,34 +1,34 @@
-# EX 2 C program to check whether the attendance is PRESENT using simple if statement.
+# EX 3 C program to find number of years based on principle,rate & simple interest.
 ## DATE
-## AIM: 
-To write a program to check whether the attendance is PRESENT using simple if statement.
+## AIM:
+To write a C program to find number of years based on principle,rate & simple interest.
 
 ## Algorithm
+
 1. Start. 
-2. Declare a variable value of type char. 
+2. Declare the variables. 
 3. Prompt the user to enter a value. 
 4. Read the value using scanf. 
-5. Check whether the attendance is PRESENT. 
-6. If true, print "Present". 
-7. If false, print " ". 
-8. End. 
-
+5. Calculate the number of years using the formula: 
+6. End .
+   
 ## Program:
 ```
-#include<stdio.h> 
-int main(){ 
-char p1; 
-scanf("%c", &p1); 
-if(p1=='P') 
+#include <stdio.h> 
+#include <math.h> 
+int main() 
 { 
-printf("Present"); 
-} 
+float p,n,r,si,ci; 
+scanf("%f%f%f", &p,&n,&r); 
+si=((p*n*r)/100); 
+ci=(p)*(pow((1+ r/100),n)); 
+printf("Simple Interest = %0.2f\nCompound Interest = %0.2f", si,ci); 
 return 0; 
 }
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/5c1edad3-4add-4300-926b-c67dd586451d)
+![image](https://github.com/user-attachments/assets/4355aa03-68b1-48aa-b155-6a26d41c2b54)
 
 
 
